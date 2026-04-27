@@ -1,0 +1,1 @@
+https://stoikarusai.blob.core.windows.net/ikarusai-public/lr_2e-05_oasst_3_epoch_3_best.pt
