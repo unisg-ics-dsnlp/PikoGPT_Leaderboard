@@ -2,9 +2,19 @@
 
 .DS_Store
 
+# IDE
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+
 # Hidden benchmarks
 leaderboard/benchmarks_hidden
 
 # Hidden model baseline
 Submissions/PikoGPT_Baseline_GH_hiddien
 Results/PikoGPT_Baseline_GH_hiddien
+
+# Model checkpoints (too large for git)
+Submissions/*/runs/*.pt
