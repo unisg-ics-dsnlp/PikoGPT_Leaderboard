@@ -1,0 +1,49 @@
+{
+  "submission": "PikoGPT_DropOuters",
+  "submission_dir": "C:\\Users\\user\\Desktop\\DL2026\\PikoGPT_Leaderboard\\Submissions\\PikoGPT_DropOuters",
+  "checkpoint": "C:\\Users\\user\\Desktop\\DL2026\\PikoGPT_Leaderboard\\Submissions\\PikoGPT_DropOuters\\runs\\best_model.pt",
+  "limit": 500,
+  "output_dir": "Results\\PikoGPT_DropOuters\\best_model",
+  "main_path": "C:\\Users\\user\\Desktop\\DL2026\\PikoGPT_Leaderboard\\Submissions\\PikoGPT_DropOuters\\main.py",
+  "python": ".\\.venv\\Scripts\\python.exe",
+  "device": "cuda",
+  "temperature": 0.0,
+  "seed": 0,
+  "timeout_s": 120,
+  "mc_max_tokens": 3,
+  "lambada_max_tokens": 5,
+  "benchmarks": [
+    {
+      "benchmark": "hellaswag",
+      "data": "leaderboard\\benchmarks\\hellaswag\\cleaned\\validation.jsonl",
+      "total": 500,
+      "correct": 171,
+      "invalid": 0,
+      "accuracy_pct": 34.2
+    },
+    {
+      "benchmark": "winogrande",
+      "data": "leaderboard\\benchmarks\\winogrande\\cleaned\\validation.jsonl",
+      "total": 500,
+      "correct": 250,
+      "invalid": 0,
+      "accuracy_pct": 50.0
+    },
+    {
+      "benchmark": "openbookqa",
+      "data": "leaderboard\\benchmarks\\openbookqa\\cleaned\\validation.jsonl",
+      "total": 500,
+      "correct": 215,
+      "invalid": 0,
+      "accuracy_pct": 43.0
+    },
+    {
+      "benchmark": "lambada",
+      "data": "leaderboard\\benchmarks\\lambada\\cleaned\\test.jsonl",
+      "total": 500,
+      "correct": 71,
+      "invalid": 7,
+      "accuracy_pct": 14.2
+    }
+  ]
+}

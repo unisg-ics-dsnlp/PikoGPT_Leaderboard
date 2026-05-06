@@ -1,0 +1,2 @@
+Checkpoint file: best_model.pt
+Download link: https://universitaetstgallen-my.sharepoint.com/personal/nilufar_ismayilova_student_unisg_ch/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fnilufar%5Fismayilova%5Fstudent%5Funisg%5Fch%2FDocuments%2FBosphorus%20Gradient%2Fbest%20model%2FBosphorus%20Gradient&viewid=4d463f8b%2D5f3a%2D4392%2D8b22%2Df2c830758e4c
