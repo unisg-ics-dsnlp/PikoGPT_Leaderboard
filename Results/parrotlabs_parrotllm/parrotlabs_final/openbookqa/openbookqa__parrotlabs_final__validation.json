@@ -1,0 +1,153 @@
+{
+  "benchmark": "openbookqa",
+  "submission": "parrotlabs_parrotllm",
+  "checkpoint": "/Users/gian1/CODE/HSG/FS26/NLP/ParrotLLM/external/PikoGPT_Leaderboard/Submissions/parrotlabs_parrotllm/runs/parrotlabs_final.pt",
+  "data": "leaderboard/benchmarks/openbookqa/cleaned/validation.jsonl",
+  "limit": 100,
+  "total": 100,
+  "correct": 37,
+  "invalid": 0,
+  "accuracy_pct": 37.0,
+  "wrong_examples": [
+    {
+      "id": "openbookqa_val_7-57",
+      "gold": "D",
+      "pred": "A",
+      "prompt": "Question: Gas can fill any container it is given, and liquid\nA) is standard weight and size\nB) is the opposite of variable\nC) only needs a few\nD) uses what it needs\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "openbookqa_val_7-1024",
+      "gold": "A",
+      "pred": "C",
+      "prompt": "Question: When birds migrate south for the winter, they do it because\nA) they are genetically called to\nB) their children ask for them to\nC) it is important to their happiness\nD) they decide to each year\nAnswer:",
+      "raw_generation": "C"
+    },
+    {
+      "id": "openbookqa_val_959",
+      "gold": "D",
+      "pred": "C",
+      "prompt": "Question: If a person walks in the opposite direction of a compass arrow they are walking\nA) west\nB) north\nC) east\nD) south\nAnswer:",
+      "raw_generation": "C"
+    },
+    {
+      "id": "openbookqa_val_8-422",
+      "gold": "B",
+      "pred": "D",
+      "prompt": "Question: A frog, in winter, will burrow itself into soft mud, until it freezes, then in the spring\nA) it melts, because it is warm-blooded\nB) it unfreezes, because it is cold-blooded\nC) it remains frozen until it dies\nD) it dies, because it is warm-blooded\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_7-921",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Question: A body may find its temperature to be lowered after\nA) water is heated up\nB) fluid spreads from pores\nC) the air becomes arid\nD) the sky stays bright\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "openbookqa_val_9-1039",
+      "gold": "C",
+      "pred": "A",
+      "prompt": "Question: An example of data collection is\nA) Deleting case files on the computer\nB) Touching evidence without gloves\nC) speaking with a witness\nD) Throwing documents in the trash\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "openbookqa_val_739",
+      "gold": "C",
+      "pred": "A",
+      "prompt": "Question: An animal can hunt by cracking open a\nA) claw\nB) house\nC) shell\nD) bone\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "openbookqa_val_8-9",
+      "gold": "A",
+      "pred": "D",
+      "prompt": "Question: Magma contains\nA) particles of iron\nB) Loads of leaves\nC) Soda\nD) Silly Putty\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_9-900",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Question: Tunnels\nA) lead to less impacted soil\nB) pact down soil to make it denser\nC) firm up the ground\nD) help prevent the effects of erosion\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "openbookqa_val_9-902",
+      "gold": "D",
+      "pred": "A",
+      "prompt": "Question: A fire starts in a wide, open field and catches onto a forest. The fire started even though people were far away from the woods. A potential cause for the start of it could have been\nA) wind\nB) sand\nC) stones\nD) storms\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "openbookqa_val_7-1139",
+      "gold": "C",
+      "pred": "A",
+      "prompt": "Question: To have a positive impact of the environment\nA) use Styrofoam plates and bowls\nB) use more paper towels\nC) salvage plastic bottles instead of throwing them away\nD) drive a car that guzzles gas\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "openbookqa_val_7-606",
+      "gold": "D",
+      "pred": "B",
+      "prompt": "Question: Winter solstice occurs on a day when\nA) the sun is brightest\nB) the sun is eclipsed\nC) the moon is full\nD) the darkness is greatest\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "openbookqa_val_7-847",
+      "gold": "C",
+      "pred": "D",
+      "prompt": "Question: Which is a good source of nutrients for a mushroom?\nA) a trotting horse\nB) a roaring lion\nC) a cut peony\nD) a flying eagle\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_1981",
+      "gold": "A",
+      "pred": "D",
+      "prompt": "Question: Alligators\nA) eat gar\nB) eat only foliage\nC) have live births\nD) are warm-blooded\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_670",
+      "gold": "D",
+      "pred": "A",
+      "prompt": "Question: What might occur during an experiment\nA) severe oxygen depletion in the atmosphere\nB) layers of the ozone disintegrating\nC) midterm exams for math class\nD) solution overflowing from a beaker\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "openbookqa_val_8-38",
+      "gold": "B",
+      "pred": "D",
+      "prompt": "Question: A woman wants to figure out what renewable resources she can use in order to be more environmentally friendly and sufficient. She decides to use all of these resources that are renewable, with the exception of the one nonrenewable, which is\nA) sunlight\nB) aluminium\nC) wood\nD) water\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_7-512",
+      "gold": "A",
+      "pred": "D",
+      "prompt": "Question: Cocoon creation occurs\nA) after the caterpillar stage\nB) after the chrysalis stage\nC) after the eggs are laid\nD) after the cocoon emerging stage\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_353",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Question: Where would animals shiver the most?\nA) Arctic Circle\nB) Sumatra\nC) Java\nD) tropical rainforest\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "openbookqa_val_1061",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Question: In the desert it was harder to find a\nA) stream\nB) cactus\nC) dry bed\nD) canyon\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "openbookqa_val_9-108",
+      "gold": "D",
+      "pred": "C",
+      "prompt": "Question: Why can an Owl retain it's body temperature during the winter?\nA) It's neither\nB) It's both\nC) It's cold blooded\nD) It's warm blooded\nAnswer:",
+      "raw_generation": "C"
+    }
+  ]
+}
