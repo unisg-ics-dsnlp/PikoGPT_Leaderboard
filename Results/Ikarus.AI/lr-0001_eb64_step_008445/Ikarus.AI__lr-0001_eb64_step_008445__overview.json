@@ -1,0 +1,49 @@
+{
+  "submission": "Ikarus.AI",
+  "submission_dir": "/Users/raphaelguentensperger/git/PikoGPT_Leaderboard/Submissions/Ikarus.AI",
+  "checkpoint": "/Users/raphaelguentensperger/git/PikoGPT_Leaderboard/Submissions/Ikarus.AI/runs/lr-0001_eb64_step_008445.pt",
+  "limit": 100,
+  "output_dir": "Results/Ikarus.AI/lr-0001_eb64_step_008445",
+  "main_path": "/Users/raphaelguentensperger/git/PikoGPT_Leaderboard/Submissions/Ikarus.AI/main.py",
+  "python": "python",
+  "device": "auto",
+  "temperature": 0.0,
+  "seed": 0,
+  "timeout_s": 60,
+  "mc_max_tokens": 3,
+  "lambada_max_tokens": 5,
+  "benchmarks": [
+    {
+      "benchmark": "hellaswag",
+      "data": "leaderboard/benchmarks/hellaswag/cleaned/validation.jsonl",
+      "total": 100,
+      "correct": 16,
+      "invalid": 6,
+      "accuracy_pct": 16.0
+    },
+    {
+      "benchmark": "winogrande",
+      "data": "leaderboard/benchmarks/winogrande/cleaned/validation.jsonl",
+      "total": 100,
+      "correct": 52,
+      "invalid": 4,
+      "accuracy_pct": 52.0
+    },
+    {
+      "benchmark": "openbookqa",
+      "data": "leaderboard/benchmarks/openbookqa/cleaned/validation.jsonl",
+      "total": 100,
+      "correct": 29,
+      "invalid": 3,
+      "accuracy_pct": 28.999999999999996
+    },
+    {
+      "benchmark": "lambada",
+      "data": "leaderboard/benchmarks/lambada/cleaned/test.jsonl",
+      "total": 100,
+      "correct": 4,
+      "invalid": 6,
+      "accuracy_pct": 4.0
+    }
+  ]
+}

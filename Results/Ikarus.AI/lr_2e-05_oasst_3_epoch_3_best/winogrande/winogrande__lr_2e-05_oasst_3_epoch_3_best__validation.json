@@ -1,0 +1,153 @@
+{
+  "benchmark": "winogrande",
+  "submission": "Ikarus.AI",
+  "checkpoint": "/Users/raphaelguentensperger/git/PikoGPT_Leaderboard/Submissions/Ikarus.AI/runs/lr_2e-05_oasst_3_epoch_3_best.pt",
+  "data": "leaderboard/benchmarks/winogrande/cleaned/validation.jsonl",
+  "limit": 100,
+  "total": 100,
+  "correct": 11,
+  "invalid": 79,
+  "accuracy_pct": 11.0,
+  "wrong_examples": [
+    {
+      "id": "winogrande_val_sha1_d1c6c847e784b027",
+      "gold": "B",
+      "pred": null,
+      "prompt": "Context: Sarah was a much better surgeon than Maria so _ always got the easier cases.\nA) Sarah\nB) Maria\nAnswer:",
+      "raw_generation": "Sarah was a\n"
+    },
+    {
+      "id": "winogrande_val_sha1_2f4bc58e3059d2bd",
+      "gold": "A",
+      "pred": null,
+      "prompt": "Context: Sarah was a much better surgeon than Maria so _ always got the harder cases.\nA) Sarah\nB) Maria\nAnswer:",
+      "raw_generation": "Sarah was a\n"
+    },
+    {
+      "id": "winogrande_val_sha1_1550bebe18867e29",
+      "gold": "B",
+      "pred": null,
+      "prompt": "Context: They were worried the wine would ruin the bed and the blanket, but the _ was't ruined.\nA) blanket\nB) bed\nAnswer:",
+      "raw_generation": "The _ was\n"
+    },
+    {
+      "id": "winogrande_val_sha1_1607771d0cd27277",
+      "gold": "A",
+      "pred": null,
+      "prompt": "Context: Terry tried to bake the eggplant in the toaster oven but the _ was too big.\nA) eggplant\nB) toaster\nAnswer:",
+      "raw_generation": "The recipe for\n"
+    },
+    {
+      "id": "winogrande_val_sha1_3e1136708a0a8fd0",
+      "gold": "A",
+      "pred": null,
+      "prompt": "Context: At night, Jeffrey always stays up later than Hunter to watch TV because _ wakes up late.\nA) Jeffrey\nB) Hunter\nAnswer:",
+      "raw_generation": "The night is\n"
+    },
+    {
+      "id": "winogrande_val_sha1_2898aced05b9aa96",
+      "gold": "A",
+      "pred": null,
+      "prompt": "Context: The cat of Sarah has some mouth problems, so she takes it to see Maria. _ is a responsible cat owner.\nA) Sarah\nB) Maria\nAnswer:",
+      "raw_generation": "Sarah is a\n"
+    },
+    {
+      "id": "winogrande_val_sha1_73027b962cf118c9",
+      "gold": "A",
+      "pred": null,
+      "prompt": "Context: The home that my parents had when I was in school was a lot nicer than my house now because the _ was sophisticated.\nA) home\nB) house\nAnswer:",
+      "raw_generation": "The home that\n"
+    },
+    {
+      "id": "winogrande_val_sha1_c31040169e208c34",
+      "gold": "B",
+      "pred": null,
+      "prompt": "Context: The home that my parents had when I was in school was a lot nicer than my house now because the _ is trashy.\nA) home\nB) house\nAnswer:",
+      "raw_generation": "The home that\n"
+    },
+    {
+      "id": "winogrande_val_sha1_48f4fd21327e5b8e",
+      "gold": "B",
+      "pred": null,
+      "prompt": "Context: Natalie has a rich husband and lots of money, Jennifer is poor _ needs to make her clothes.\nA) Natalie\nB) Jennifer\nAnswer:",
+      "raw_generation": "Ms. Natalie\n"
+    },
+    {
+      "id": "winogrande_val_sha1_5df251eca7464540",
+      "gold": "A",
+      "pred": null,
+      "prompt": "Context: Joe immediately went to bakery before the bank because the _ had a limited supply of what he wanted.\nA) bakery\nB) bank\nAnswer:",
+      "raw_generation": "Joe was a\n"
+    },
+    {
+      "id": "winogrande_val_sha1_a6dd0aa367bd4ef9",
+      "gold": "B",
+      "pred": null,
+      "prompt": "Context: Joe immediately went to bakery before the bank because the _ had a substantial supply of what he wanted.\nA) bakery\nB) bank\nAnswer:",
+      "raw_generation": "Joe was a\n"
+    },
+    {
+      "id": "winogrande_val_sha1_92af04950a1234ea",
+      "gold": "B",
+      "pred": null,
+      "prompt": "Context: I had to read an entire story for class tomorrow. Luckily, the _ was canceled.\nA) story\nB) class\nAnswer:",
+      "raw_generation": "I was canceled\n"
+    },
+    {
+      "id": "winogrande_val_sha1_dba4b667493ad1a9",
+      "gold": "A",
+      "pred": null,
+      "prompt": "Context: I had to read an entire story for class tomorrow. Luckily, the _ was short.\nA) story\nB) class\nAnswer:",
+      "raw_generation": "I had to\n"
+    },
+    {
+      "id": "winogrande_val_sha1_5d506eef87250da5",
+      "gold": "A",
+      "pred": null,
+      "prompt": "Context: He had enough time between classes to go to a cafe or to the library. He went to the _ because his paper could wait.\nA) cafe\nB) library\nAnswer:",
+      "raw_generation": "He had enough\n"
+    },
+    {
+      "id": "winogrande_val_sha1_319931583a16dc2a",
+      "gold": "B",
+      "pred": null,
+      "prompt": "Context: He had enough time between classes to go to a cafe or to the library. He went to the _ because his paper was due soon.\nA) cafe\nB) library\nAnswer:",
+      "raw_generation": "He was a\n"
+    },
+    {
+      "id": "winogrande_val_sha1_50f0eb514ab9a692",
+      "gold": "A",
+      "pred": null,
+      "prompt": "Context: Lindsey like to read graphic novels but Natalie liked classic literature to read. _ bought the new Frank Miller comic at the book store.\nA) Lindsey\nB) Natalie\nAnswer:",
+      "raw_generation": "I'm sorry\n"
+    },
+    {
+      "id": "winogrande_val_sha1_be7848c2c80374d5",
+      "gold": "B",
+      "pred": null,
+      "prompt": "Context: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were new and perfect.\nA) Michael\nB) Leslie\nAnswer:",
+      "raw_generation": "Michael is a\n"
+    },
+    {
+      "id": "winogrande_val_sha1_a168fee7eac7b74a",
+      "gold": "A",
+      "pred": null,
+      "prompt": "Context: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were old and used.\nA) Michael\nB) Leslie\nAnswer:",
+      "raw_generation": "Michael is a\n"
+    },
+    {
+      "id": "winogrande_val_sha1_0f85c72240301759",
+      "gold": "A",
+      "pred": null,
+      "prompt": "Context: Leslie was nervous around parrots but Neil was not, since _ was bitten by a bird early in life.\nA) Leslie\nB) Neil\nAnswer:",
+      "raw_generation": "Leslie was nervous\n"
+    },
+    {
+      "id": "winogrande_val_sha1_580371b494a27902",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Christmas was a special holiday to Eric but not Adam since _ was a Jew.\nA) Eric\nB) Adam\nAnswer:",
+      "raw_generation": "Adam was a\n"
+    }
+  ]
+}
