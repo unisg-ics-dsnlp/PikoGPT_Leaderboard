@@ -8,3 +8,17 @@ leaderboard/benchmarks_hidden
 # Hidden model baseline
 Submissions/PikoGPT_Baseline_GH_hiddien
 Results/PikoGPT_Baseline_GH_hiddien
+
+
+
+leaderboard/*
+
+Submissions/Ikarus.AI/src/pikogpt/__pycache__/*
+Submissions/Ikarus.AI/src/pikogpt/inference/__pycache__/*
+Submissions/Ikarus.AI/src/pikogpt/model/__pycache__/*
+Submissions/Ikarus.AI/src/pikogpt/posttraining/__pycache__/*
+Submissions/Ikarus.AI/src/pikogpt/training/__pycache__/*
+Submissions/Ikarus.AI/src/pikogpt/utils/__pycache__/*
+
+Submissions/Ikarus.AI/runs/*.pt
+

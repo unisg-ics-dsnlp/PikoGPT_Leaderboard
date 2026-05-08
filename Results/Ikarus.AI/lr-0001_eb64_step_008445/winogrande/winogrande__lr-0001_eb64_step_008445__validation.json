@@ -1,0 +1,153 @@
+{
+  "benchmark": "winogrande",
+  "submission": "Ikarus.AI",
+  "checkpoint": "/Users/raphaelguentensperger/git/PikoGPT_Leaderboard/Submissions/Ikarus.AI/runs/lr-0001_eb64_step_008445.pt",
+  "data": "leaderboard/benchmarks/winogrande/cleaned/validation.jsonl",
+  "limit": 100,
+  "total": 100,
+  "correct": 52,
+  "invalid": 4,
+  "accuracy_pct": 52.0,
+  "wrong_examples": [
+    {
+      "id": "winogrande_val_sha1_2f4bc58e3059d2bd",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Sarah was a much better surgeon than Maria so _ always got the harder cases.\nA) Sarah\nB) Maria\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_1550bebe18867e29",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: They were worried the wine would ruin the bed and the blanket, but the _ was't ruined.\nA) blanket\nB) bed\nAnswer:",
+      "raw_generation": "A\n"
+    },
+    {
+      "id": "winogrande_val_sha1_2898aced05b9aa96",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: The cat of Sarah has some mouth problems, so she takes it to see Maria. _ is a responsible cat owner.\nA) Sarah\nB) Maria\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_73027b962cf118c9",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: The home that my parents had when I was in school was a lot nicer than my house now because the _ was sophisticated.\nA) home\nB) house\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_c31040169e208c34",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: The home that my parents had when I was in school was a lot nicer than my house now because the _ is trashy.\nA) home\nB) house\nAnswer:",
+      "raw_generation": "A\n"
+    },
+    {
+      "id": "winogrande_val_sha1_48f4fd21327e5b8e",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Natalie has a rich husband and lots of money, Jennifer is poor _ needs to make her clothes.\nA) Natalie\nB) Jennifer\nAnswer:",
+      "raw_generation": "A\n"
+    },
+    {
+      "id": "winogrande_val_sha1_5df251eca7464540",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Joe immediately went to bakery before the bank because the _ had a limited supply of what he wanted.\nA) bakery\nB) bank\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_dba4b667493ad1a9",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: I had to read an entire story for class tomorrow. Luckily, the _ was short.\nA) story\nB) class\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_319931583a16dc2a",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: He had enough time between classes to go to a cafe or to the library. He went to the _ because his paper was due soon.\nA) cafe\nB) library\nAnswer:",
+      "raw_generation": "A\n"
+    },
+    {
+      "id": "winogrande_val_sha1_a168fee7eac7b74a",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were old and used.\nA) Michael\nB) Leslie\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_0f85c72240301759",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Leslie was nervous around parrots but Neil was not, since _ was bitten by a bird early in life.\nA) Leslie\nB) Neil\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_580371b494a27902",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Christmas was a special holiday to Eric but not Adam since _ was a Jew.\nA) Eric\nB) Adam\nAnswer:",
+      "raw_generation": "A\n"
+    },
+    {
+      "id": "winogrande_val_sha1_baf5c76ccb168502",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: They had to eat a lot to gain the strength they had lost and be able to work, the _ was too much.\nA) work\nB) strength\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_9396ee767a96fb25",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Since Craig threw aluminum cans in the trash and Benjamin recycled, _ was environmentally irresponsible.\nA) Craig\nB) Benjamin\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_2de39af7c5c2aa78",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Mary thought poodles were a cool dog but Rachel thought Great Danes were cooler. _ bought a small dog bed for their pet.\nA) Mary\nB) Rachel\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_8711b74bf9a34841",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Leslie had a lot of issues that Kyle was tired of dealing with, so _ felt abandoned when they finally moved out.\nA) Leslie\nB) Kyle\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_321b9028c96f9ff5",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Jessica enjoyed a simple, basic life with Betty, but _ was bored having a quiet existence.\nA) Jessica\nB) Betty\nAnswer:",
+      "raw_generation": "A\n"
+    },
+    {
+      "id": "winogrande_val_sha1_0d7ff5206aa8f318",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Donald's understanding of math isn't as good as Joseph's, so _ is more likely a professor.\nA) Donald\nB) Joseph\nAnswer:",
+      "raw_generation": "A\n"
+    },
+    {
+      "id": "winogrande_val_sha1_0af1a6645494e649",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Brian was jealous of Brett's new car because _ couldn't afford to buy a new car.\nA) Brian\nB) Brett\nAnswer:",
+      "raw_generation": "B\n"
+    },
+    {
+      "id": "winogrande_val_sha1_443c7c37dfffde61",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: On Monday, Patricia made Felicia eggs for an early breakfast, but _ does not like fried eggs.\nA) Patricia\nB) Felicia\nAnswer:",
+      "raw_generation": "A\n"
+    }
+  ]
+}
