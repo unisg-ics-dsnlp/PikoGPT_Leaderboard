@@ -1,0 +1,255 @@
+# ParrotLLM — single source of truth for all hyperparameters
+# ──────────────────────────────────────────────────────────
+
+preprocess:
+  dataset_size: full
+  lang: en
+  data_dir: data
+  num_workers: auto
+  skip_dedup: false
+  skip_decontam: false
+  filter_mode: heuristic
+  skip_code_filter: false
+  skip_quality_filter: false
+  skip_ellipsis_filter: false
+  append_eos_token: false
+  token_dtype: uint16
+  min_tokens: 64
+  context_length: 1024
+  target_tokens: null
+  topic_classes: null
+  topic_distribution: null
+  skip_topic_filter: false
+
+model:
+  vocab_size: 50258          # GPT-2 tokenizer vocabulary (+ pad token)
+  pad_token_id: 50257        # dedicated <|pad|>
+  bos_token_id: 50256        # GPT-2 reuses eos as bos
+  eos_token_id: 50256        # </s>
+  d_model: 384               # hidden dimension (tuned: wide & shallow wins)
+  n_layers: 14               # transformer blocks (tuned: shallower than MobileLLM's 16)
+  n_heads: 6                 # attention heads (d_head = 64, best-practice standard)
+  d_ff: 768                  # SwiGLU FFN intermediate size (d_ff/d_model = 2.0, tuned)
+  context_length: 1024       # max sequence length
+  bias: false                # no bias in linear layers
+  dropout: 0.0151            # best tuned dropout
+  rope_theta: 10000.0        # RoPE base frequency
+  gradient_checkpointing: false  # enable only when activations do not fit
+
+training:
+  device: auto
+
+  # data (output of --stage preprocess)
+  train_bin: data/processed/train.bin
+  val_bin: data/processed/val.bin
+  num_workers: 4            # VL06 recommendation
+  pin_memory: true
+
+  # batching
+  batch_size: 64             # per-GPU micro-batch from best tuning run
+  gradient_accumulation_steps: 4  # effective batch = 64 * 4 * num_gpus
+  train_samples_per_epoch: null   # null = legacy-sized epoch budget, but drawn from random overlapping windows
+  val_sequence_stride: null       # null = context_length; deterministic contiguous validation windows
+
+  # optimizer — AdamW
+  learning_rate: 4.261e-4
+  min_lr: 4.261e-5           # 10% of peak lr
+  weight_decay: 0.0190
+  beta1: 0.9
+  beta2: 0.9332
+  grad_clip: 1.9053
+
+  # schedule
+  warmup_steps: 150
+  max_steps: 100000
+  lr_schedule: wsd      # wsd = Warmup-Stable-Decay; cosine = cosine annealing
+  lr_decay_ratio: 0.2296   # fraction of steps used for decay (WSD only)
+  z_loss_coeff: 6.540e-4   # penalise large logits for mixed-precision stability
+
+  # checkpointing
+  save_every: 5000           # save checkpoint every N steps
+  eval_every: 500            # evaluate every N steps
+  checkpoint_dir: checkpoints    # subdir inside each runs/run_*/ directory
+  keep_last_checkpoints: 10
+  keep_best_checkpoints: 10
+  early_stopping_patience: 8   # stop after N evals without val-loss improvement
+  early_stopping_min_delta: 0.001  # minimum val-loss drop to reset patience
+
+  # logging
+  runs_dir: runs             # base directory for run outputs
+  log_every: 10              # log to console every N steps
+  # Optional: mirror the finished local run folder to the Hugging Face Hub once,
+  # after training completes and all local artifacts are written.
+  # hf_upload:
+  #   repo_id: your-org/your-parrotllm-runs
+  #   repo_type: dataset
+  #   path_in_repo: ""
+  #   private: true
+
+logging:
+  console_level: INFO
+  file_level: DEBUG
+  # per-component log level overrides
+  components:
+    data_preprocessing: DEBUG
+    model_initialization: INFO
+    training: INFO
+  profiler:
+    enabled: false
+    wait: 1
+    warmup: 1
+    active: 4
+    repeat: 1
+    activities:
+      - cpu
+      - cuda
+
+eval:
+  device: auto
+  batch_size: 32
+  max_sequences: 512         # cap eval sequences for speed
+  datasets:
+    - name: wikitext
+      path: wikitext
+      subset: wikitext-103-raw-v1
+      split: test
+    - name: owt_val
+      path: data/processed/val.bin
+
+inference:
+  device: auto
+  max_tokens: 128
+  temperature: 0.2           # 0 = greedy
+  top_k: 50
+  top_p: 0.9
+
+chat:
+  device: auto
+  max_tokens: 256
+  temperature: 0.7
+  top_k: 50
+  top_p: 0.9
+  system_prompt: "You are ParrotLLM, a helpful assistant."
+  checkpoint_dir: runs
+
+# ── Post-training: Supervised Fine-Tuning (VL07) ────────────────────────────
+# Recommended by VL07 slide 48 for PikoGPT: Alpaca dataset + small LR to
+# avoid catastrophic forgetting. See docs/post_training/SFT.md for full
+# rationale per hyperparameter.
+sft:
+  # Data (VL07 §2 + slide 48)
+  hf_dataset_name: tatsu-lab/alpaca
+  hf_split: train
+  max_examples: null              # null = full; set e.g. 1000 for smoke test
+  val_fraction: 0.05
+  # Drop SFT examples that overlap with public leaderboard test splits
+  # (PikoGPT fact sheet §4.3). Names map to loaders in
+  # src/post_training/sft/data.py::DECONTAM_LOADERS.
+  decontam_benchmarks:
+    - lambada
+    - hellaswag
+    - winogrande
+    - openbookqa
+
+  # Tokenisation / template (VL07 slide 32 "Alpaca — simplest choice")
+  # Note: append_eos and mask_instruction_loss are non-negotiable per
+  # VL07 slides 14-15 and are unconditional in the trainer. They are
+  # intentionally NOT exposed as YAML knobs.
+  max_length: 1024                # ≤ model.context_length (hard constraint)
+
+  # Optimiser (VL07 slide 25 + SFT.md §5)
+  learning_rate: 2.0e-5           # ≈1/10 of pretraining peak
+  min_lr: 2.0e-6                  # 10% floor
+  weight_decay: 0.1
+  beta1: 0.9
+  beta2: 0.95
+  grad_clip: 1.0                  # VL04 "Gradient Clipping"
+
+  # Schedule
+  warmup_steps: 100               # short: not starting from random weights
+  epochs: 2
+  lr_schedule: cosine             # matches Stanford Alpaca
+
+  # Batching
+  batch_size: 8                   # adjust to VRAM; 5090 fits 16 comfortably
+  gradient_accumulation_steps: 8  # effective batch = 64
+  num_workers: 0                  # in-RAM dataset → 0 is faster than 2 (no fork/IPC)
+  pin_memory: true
+
+  # Catastrophic-forgetting mitigations (VL07 slide 25)
+  pretraining_mix_ratio: 0.0      # 0 = pure SFT; 0.05-0.10 for OLMo-style mix
+  pretraining_bin_path: null
+
+  # Wikitext-103 CF tripwire (SFT.md §6 operating bound: hard-stop >10%)
+  wt103_eval_every_n_evals: 5     # 0 disables; 5 = every 5th SFT eval
+  wt103_max_sequences: 64         # ~65k tokens — finishes in seconds on a 5090
+  wt103_hard_stop_pct: 10.0       # 0 disables hard-stop (still logs delta)
+
+  # Performance knobs (5090/Blackwell defaults)
+  torch_compile: true             # set false only if compile errors on your platform
+
+# ── Post-training: Direct Preference Optimization (VL08) ────────────────────
+# Initialised from the SFT checkpoint as BOTH policy and frozen reference.
+# Per VL08 slide 33: L = -log σ(β·[Δ_policy_chosen-rejected − Δ_ref_chosen-rejected])
+dpo:
+  # Data — Intel/orca_dpo_pairs is small (12k pairs), Alpaca-friendly,
+  # GPT-4 chosen vs original-LLaMA rejected. Default for our 35M model.
+  hf_dataset_name: Intel/orca_dpo_pairs
+  hf_split: train
+  max_examples: null
+  val_fraction: 0.05
+  decontam_benchmarks:
+    - lambada
+    - hellaswag
+    - winogrande
+    - openbookqa
+
+  max_length: 1024
+
+  # DPO loss (Rafailov et al. 2023; VL08 slide 33)
+  beta: 0.1                       # canonical default; raise to 0.3+ if drift
+  length_normalize_logp: false    # keep canonical sum-of-logp; flip if length collapse
+
+  # Optimiser — DPO LR is typically 1/2-1/4 of SFT LR
+  learning_rate: 5.0e-6
+  min_lr: 5.0e-7
+  weight_decay: 0.0               # canonical DPO recipe: no weight decay
+  beta1: 0.9
+  beta2: 0.95
+  grad_clip: 1.0
+
+  warmup_steps: 50
+  epochs: 1                       # DPO usually 1 epoch (Rafailov + Tunstall)
+  lr_schedule: cosine
+
+  batch_size: 4                   # smaller than SFT — 2 models + 4 forwards/step
+  gradient_accumulation_steps: 8  # effective batch = 32
+  num_workers: 0
+  pin_memory: true
+
+  # CF tripwire — measure DPO drift from the SFT base model, not pretraining
+  wt103_eval_every_n_evals: 2
+  wt103_max_sequences: 64
+  wt103_hard_stop_pct: 10.0
+
+  runs_dir: runs
+  eval_every: 50
+  save_every: 999999
+  log_every: 5
+  early_stopping_patience: 3
+
+  base_checkpoint: null           # override on the CLI
+  device: auto
+  torch_compile: true
+
+  # Logging / checkpointing
+  runs_dir: runs
+  eval_every: 200
+  save_every: 500
+  log_every: 10
+  early_stopping_patience: 5
+
+  # Base checkpoint — override on the CLI with --checkpoint
+  base_checkpoint: null
+
+  device: auto

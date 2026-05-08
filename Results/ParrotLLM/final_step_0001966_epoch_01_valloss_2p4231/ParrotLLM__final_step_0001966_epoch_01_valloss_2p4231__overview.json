@@ -1,0 +1,49 @@
+{
+  "submission": "ParrotLLM",
+  "submission_dir": "C:\\Users\\chris\\source\\repos\\ParrotLLM",
+  "checkpoint": "C:\\Users\\chris\\source\\repos\\ParrotLLM\\runs\\run_20260428_211931_sft\\checkpoints\\final_step_0001966_epoch_01_valloss_2p4231.pt",
+  "limit": 500,
+  "output_dir": "Results\\ParrotLLM\\final_step_0001966_epoch_01_valloss_2p4231",
+  "main_path": "C:\\Users\\chris\\source\\repos\\ParrotLLM\\main.py",
+  "python": "C:/Users/chris/source/repos/ParrotLLM/.venv/Scripts/python.exe",
+  "device": "auto",
+  "temperature": 0.0,
+  "seed": 0,
+  "timeout_s": 60,
+  "mc_max_tokens": 3,
+  "lambada_max_tokens": 5,
+  "benchmarks": [
+    {
+      "benchmark": "hellaswag",
+      "data": "leaderboard\\benchmarks\\hellaswag\\cleaned\\validation.jsonl",
+      "total": 500,
+      "correct": 161,
+      "invalid": 0,
+      "accuracy_pct": 32.2
+    },
+    {
+      "benchmark": "winogrande",
+      "data": "leaderboard\\benchmarks\\winogrande\\cleaned\\validation.jsonl",
+      "total": 500,
+      "correct": 270,
+      "invalid": 1,
+      "accuracy_pct": 54.0
+    },
+    {
+      "benchmark": "openbookqa",
+      "data": "leaderboard\\benchmarks\\openbookqa\\cleaned\\validation.jsonl",
+      "total": 500,
+      "correct": 125,
+      "invalid": 0,
+      "accuracy_pct": 25.0
+    },
+    {
+      "benchmark": "lambada",
+      "data": "leaderboard\\benchmarks\\lambada\\cleaned\\test.jsonl",
+      "total": 500,
+      "correct": 116,
+      "invalid": 25,
+      "accuracy_pct": 23.200000000000003
+    }
+  ]
+}
