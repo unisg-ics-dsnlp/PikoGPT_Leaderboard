@@ -1,6 +1,10 @@
 .venv
 
 .DS_Store
+__pycache__/
+
+Submissions/funkyai/runs/*.pt
+Submissions/funkyai/runs/.model_cache/
 
 # Hidden benchmarks
 leaderboard/benchmarks_hidden
