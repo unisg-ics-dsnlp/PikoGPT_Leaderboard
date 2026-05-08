@@ -1,0 +1,153 @@
+{
+  "benchmark": "winogrande",
+  "submission": "PikoGPT_ParrotLabs",
+  "checkpoint": "/Users/tilmanhaferbeck/PikoGPT_Leaderboard/Submissions/PikoGPT_ParrotLabs/runs/dpo_v9_submit_fp16.pt",
+  "data": "leaderboard/benchmarks/winogrande/cleaned/validation.jsonl",
+  "limit": 100,
+  "total": 100,
+  "correct": 56,
+  "invalid": 0,
+  "accuracy_pct": 56.00000000000001,
+  "wrong_examples": [
+    {
+      "id": "winogrande_val_sha1_d1c6c847e784b027",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Sarah was a much better surgeon than Maria so _ always got the easier cases.\nA) Sarah\nB) Maria\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_3e1136708a0a8fd0",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: At night, Jeffrey always stays up later than Hunter to watch TV because _ wakes up late.\nA) Jeffrey\nB) Hunter\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_a6dd0aa367bd4ef9",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Joe immediately went to bakery before the bank because the _ had a substantial supply of what he wanted.\nA) bakery\nB) bank\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_5d506eef87250da5",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: He had enough time between classes to go to a cafe or to the library. He went to the _ because his paper could wait.\nA) cafe\nB) library\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_50f0eb514ab9a692",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Lindsey like to read graphic novels but Natalie liked classic literature to read. _ bought the new Frank Miller comic at the book store.\nA) Lindsey\nB) Natalie\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_be7848c2c80374d5",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were new and perfect.\nA) Michael\nB) Leslie\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_a168fee7eac7b74a",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were old and used.\nA) Michael\nB) Leslie\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_0f85c72240301759",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Leslie was nervous around parrots but Neil was not, since _ was bitten by a bird early in life.\nA) Leslie\nB) Neil\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_b5832fc32b412176",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: They had to eat a lot to gain the strength they had lost and be able to work, the _ was too little.\nA) work\nB) strength\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_e7ec8863a6ef46b3",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: The roof of Rachel's home is old and falling apart, while Betty's is new. The home value of _ is lower.\nA) Rachel\nB) Betty\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_9396ee767a96fb25",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Since Craig threw aluminum cans in the trash and Benjamin recycled, _ was environmentally irresponsible.\nA) Craig\nB) Benjamin\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_ec4b0fa1357d0348",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Christine was going to Jessica's house to do some cleaning in the kitchen, because _ was a energetic person.\nA) Christine\nB) Jessica\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_338bdb684a2377be",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: The students were at their desks taking tests with pencils, they used the _ to hold the papers.\nA) desks\nB) pencils\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_2de39af7c5c2aa78",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Mary thought poodles were a cool dog but Rachel thought Great Danes were cooler. _ bought a small dog bed for their pet.\nA) Mary\nB) Rachel\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_907e2dacf022a072",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Angela thinks her husband might be cheating with Lindsey, and _ confesses at the dinner party.\nA) Angela\nB) Lindsey\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_6facd1d1296f5476",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Jill was on a budget so she only bought a new dress for the ceremony and wore an old hat. She figured the _ would be more noticeable.\nA) dress\nB) hat\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_46f1829d898f5855",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Since Craig wears clear contacts and William wears colored ones, it is safe to assume that _ loves the color of their eyes.\nA) Craig\nB) William\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_7b287b249af72092",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Since Craig wears clear contacts and William wears colored ones, it is safe to assume that _ dislikes the color of their eyes.\nA) Craig\nB) William\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_9ac81c272ba6c61c",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: It was easy for Angela to become a vegetarian although Kayla couldn't do it. _ really missed the taste of chicken.\nA) Angela\nB) Kayla\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_66f8ed6148a8ef12",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Hunter was a better baker than Logan so _ made the kitchen a mess when they tried to make an apple pie.\nA) Hunter\nB) Logan\nAnswer:",
+      "raw_generation": "A"
+    }
+  ]
+}

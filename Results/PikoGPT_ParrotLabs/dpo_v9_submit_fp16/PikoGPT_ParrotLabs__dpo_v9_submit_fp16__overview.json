@@ -1,0 +1,49 @@
+{
+  "submission": "PikoGPT_ParrotLabs",
+  "submission_dir": "/Users/tilmanhaferbeck/PikoGPT_Leaderboard/Submissions/PikoGPT_ParrotLabs",
+  "checkpoint": "/Users/tilmanhaferbeck/PikoGPT_Leaderboard/Submissions/PikoGPT_ParrotLabs/runs/dpo_v9_submit_fp16.pt",
+  "limit": 100,
+  "output_dir": "Results/PikoGPT_ParrotLabs/dpo_v9_submit_fp16",
+  "main_path": "/Users/tilmanhaferbeck/PikoGPT_Leaderboard/Submissions/PikoGPT_ParrotLabs/main.py",
+  "python": "python",
+  "device": "auto",
+  "temperature": 0.0,
+  "seed": 0,
+  "timeout_s": 120,
+  "mc_max_tokens": 3,
+  "lambada_max_tokens": 5,
+  "benchmarks": [
+    {
+      "benchmark": "hellaswag",
+      "data": "leaderboard/benchmarks/hellaswag/cleaned/validation.jsonl",
+      "total": 100,
+      "correct": 30,
+      "invalid": 0,
+      "accuracy_pct": 30.0
+    },
+    {
+      "benchmark": "winogrande",
+      "data": "leaderboard/benchmarks/winogrande/cleaned/validation.jsonl",
+      "total": 100,
+      "correct": 56,
+      "invalid": 0,
+      "accuracy_pct": 56.00000000000001
+    },
+    {
+      "benchmark": "openbookqa",
+      "data": "leaderboard/benchmarks/openbookqa/cleaned/validation.jsonl",
+      "total": 100,
+      "correct": 26,
+      "invalid": 0,
+      "accuracy_pct": 26.0
+    },
+    {
+      "benchmark": "lambada",
+      "data": "leaderboard/benchmarks/lambada/cleaned/test.jsonl",
+      "total": 100,
+      "correct": 16,
+      "invalid": 0,
+      "accuracy_pct": 16.0
+    }
+  ]
+}
