@@ -1,0 +1,153 @@
+{
+  "benchmark": "winogrande",
+  "submission": "PegasusGPT_T1_run2",
+  "checkpoint": "/Users/taskmaster/Desktop/NLP/PikoGPT_Leaderboard/Submissions/PegasusGPT_T1_run2/runs/run2dpo_best_checkpoint.pt",
+  "data": "leaderboard/benchmarks/winogrande/cleaned/validation.jsonl",
+  "limit": 500,
+  "total": 500,
+  "correct": 257,
+  "invalid": 0,
+  "accuracy_pct": 51.4,
+  "wrong_examples": [
+    {
+      "id": "winogrande_val_sha1_2f4bc58e3059d2bd",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Sarah was a much better surgeon than Maria so _ always got the harder cases.\nA) Sarah\nB) Maria\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_3e1136708a0a8fd0",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: At night, Jeffrey always stays up later than Hunter to watch TV because _ wakes up late.\nA) Jeffrey\nB) Hunter\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_2898aced05b9aa96",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: The cat of Sarah has some mouth problems, so she takes it to see Maria. _ is a responsible cat owner.\nA) Sarah\nB) Maria\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_c31040169e208c34",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: The home that my parents had when I was in school was a lot nicer than my house now because the _ is trashy.\nA) home\nB) house\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_a6dd0aa367bd4ef9",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Joe immediately went to bakery before the bank because the _ had a substantial supply of what he wanted.\nA) bakery\nB) bank\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_319931583a16dc2a",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: He had enough time between classes to go to a cafe or to the library. He went to the _ because his paper was due soon.\nA) cafe\nB) library\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_be7848c2c80374d5",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were new and perfect.\nA) Michael\nB) Leslie\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_0f85c72240301759",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Leslie was nervous around parrots but Neil was not, since _ was bitten by a bird early in life.\nA) Leslie\nB) Neil\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_580371b494a27902",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Christmas was a special holiday to Eric but not Adam since _ was a Jew.\nA) Eric\nB) Adam\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_b5832fc32b412176",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: They had to eat a lot to gain the strength they had lost and be able to work, the _ was too little.\nA) work\nB) strength\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_43680a0e88b685e4",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: All the clutter in the house excited Leslie but not Derrick because cleaning energized _ very much.\nA) Leslie\nB) Derrick\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_ec4b0fa1357d0348",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Christine was going to Jessica's house to do some cleaning in the kitchen, because _ was a energetic person.\nA) Christine\nB) Jessica\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_f756c2ae0ab403c5",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Tanya told Emily she couldn't come to work because her cat had an infection, but _ was lying.\nA) Tanya\nB) Emily\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_0d7ff5206aa8f318",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Donald's understanding of math isn't as good as Joseph's, so _ is more likely a professor.\nA) Donald\nB) Joseph\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_34dde10343e9ae3e",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: The man used his eyes to read the letters but the _ were too small.\nA) letters\nB) eyes\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_6facd1d1296f5476",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Jill was on a budget so she only bought a new dress for the ceremony and wore an old hat. She figured the _ would be more noticeable.\nA) dress\nB) hat\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_443c7c37dfffde61",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: On Monday, Patricia made Felicia eggs for an early breakfast, but _ does not like fried eggs.\nA) Patricia\nB) Felicia\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_66f8ed6148a8ef12",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Hunter was a better baker than Logan so _ made the kitchen a mess when they tried to make an apple pie.\nA) Hunter\nB) Logan\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_5fac0af5eadd19b8",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Judy bought new brushes to paint the etched glasses crack but it didn't fit. The _ was too narrow.\nA) brush\nB) crack\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_0e88c88e56a95acc",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Jennifer was more of a morning person than Natalie because _ always went to bed early and got a good night's rest.\nA) Jennifer\nB) Natalie\nAnswer:",
+      "raw_generation": "B"
+    }
+  ]
+}

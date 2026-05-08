@@ -1,0 +1,153 @@
+{
+  "benchmark": "openbookqa",
+  "submission": "PegasusGPT_T1_run2",
+  "checkpoint": "/Users/taskmaster/Desktop/NLP/PikoGPT_Leaderboard/Submissions/PegasusGPT_T1_run2/runs/run2dpo_best_checkpoint.pt",
+  "data": "leaderboard/benchmarks/openbookqa/cleaned/validation.jsonl",
+  "limit": 500,
+  "total": 500,
+  "correct": 204,
+  "invalid": 0,
+  "accuracy_pct": 40.8,
+  "wrong_examples": [
+    {
+      "id": "openbookqa_val_8-376",
+      "gold": "A",
+      "pred": "D",
+      "prompt": "Question: Frilled sharks and angler fish live far beneath the surface of the ocean, which is why they are known as\nA) Deep sea animals\nB) fish\nC) Long Sea Fish\nD) Far Sea Animals\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_9-241",
+      "gold": "D",
+      "pred": "C",
+      "prompt": "Question: An example of lots kinetic energy would be\nA) Drinking a cold glass of water\nB) A snail moving across the sidewalk\nC) sitting without moving anywhere\nD) An aircraft taking a trip\nAnswer:",
+      "raw_generation": "C"
+    },
+    {
+      "id": "openbookqa_val_7-97",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Question: A person can grow cabbage in January with the help of what product?\nA) Green house\nB) Parliment\nC) Congress\nD) White house\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "openbookqa_val_8-22",
+      "gold": "B",
+      "pred": "C",
+      "prompt": "Question: If a person enjoys long, sunny days their favorite month would be\nA) October\nB) July\nC) April\nD) March\nAnswer:",
+      "raw_generation": "C"
+    },
+    {
+      "id": "openbookqa_val_9-1039",
+      "gold": "C",
+      "pred": "B",
+      "prompt": "Question: An example of data collection is\nA) Deleting case files on the computer\nB) Touching evidence without gloves\nC) speaking with a witness\nD) Throwing documents in the trash\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "openbookqa_val_739",
+      "gold": "C",
+      "pred": "D",
+      "prompt": "Question: An animal can hunt by cracking open a\nA) claw\nB) house\nC) shell\nD) bone\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_8-9",
+      "gold": "A",
+      "pred": "D",
+      "prompt": "Question: Magma contains\nA) particles of iron\nB) Loads of leaves\nC) Soda\nD) Silly Putty\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_9-902",
+      "gold": "D",
+      "pred": "B",
+      "prompt": "Question: A fire starts in a wide, open field and catches onto a forest. The fire started even though people were far away from the woods. A potential cause for the start of it could have been\nA) wind\nB) sand\nC) stones\nD) storms\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "openbookqa_val_529",
+      "gold": "D",
+      "pred": "C",
+      "prompt": "Question: Taking shorter showers leads to\nA) water shortages for the local environment\nB) increased energy consumption by the water heater\nC) an empty water heater\nD) less energy used by the water heater\nAnswer:",
+      "raw_generation": "C"
+    },
+    {
+      "id": "openbookqa_val_9-472",
+      "gold": "B",
+      "pred": "D",
+      "prompt": "Question: plant requires what for photosynthesis\nA) light that changes color\nB) light from our closest star\nC) the reflection of something shiny\nD) light reflected from our orbiting rock\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_7-606",
+      "gold": "D",
+      "pred": "B",
+      "prompt": "Question: Winter solstice occurs on a day when\nA) the sun is brightest\nB) the sun is eclipsed\nC) the moon is full\nD) the darkness is greatest\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "openbookqa_val_1565",
+      "gold": "A",
+      "pred": "D",
+      "prompt": "Question: The epidermis is part of\nA) is the largest organ and also the body's first defense against germs\nB) is used the second largest organ and used for breathing by humans\nC) soaks in toxins in the air\nD) repels sunlight and UV rays\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_1981",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Question: Alligators\nA) eat gar\nB) eat only foliage\nC) have live births\nD) are warm-blooded\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "openbookqa_val_7-915",
+      "gold": "B",
+      "pred": "C",
+      "prompt": "Question: Frogs are unable to give live birth, and their eggs are soft, unlike other eggs, in fact\nA) frog eggs are sour\nB) frog eggs are transparent\nC) frog eggs are yellow\nD) frog eggs are hollow\nAnswer:",
+      "raw_generation": "C"
+    },
+    {
+      "id": "openbookqa_val_8-38",
+      "gold": "B",
+      "pred": "C",
+      "prompt": "Question: A woman wants to figure out what renewable resources she can use in order to be more environmentally friendly and sufficient. She decides to use all of these resources that are renewable, with the exception of the one nonrenewable, which is\nA) sunlight\nB) aluminium\nC) wood\nD) water\nAnswer:",
+      "raw_generation": "C"
+    },
+    {
+      "id": "openbookqa_val_7-512",
+      "gold": "A",
+      "pred": "D",
+      "prompt": "Question: Cocoon creation occurs\nA) after the caterpillar stage\nB) after the chrysalis stage\nC) after the eggs are laid\nD) after the cocoon emerging stage\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_1061",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Question: In the desert it was harder to find a\nA) stream\nB) cactus\nC) dry bed\nD) canyon\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "openbookqa_val_1324",
+      "gold": "B",
+      "pred": "D",
+      "prompt": "Question: Which would best store new whale offspring?\nA) large egg carton\nB) large aquarium\nC) bag\nD) mud hole\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_9-753",
+      "gold": "C",
+      "pred": "D",
+      "prompt": "Question: All the deer in one area moved away. This could be because\nA) They wanted to go to Disneyland\nB) The deer went for a walk and got lost\nC) all the trees had died from disease and fell down\nD) They wanted to live where there were move wolves to keep them company\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_1715",
+      "gold": "A",
+      "pred": "D",
+      "prompt": "Question: Climate change has sped up dramatically because\nA) CO2 production has accelerated\nB) a rapid decline the production of carbon dioxide\nC) oxygen levels have spiked\nD) Fe has been present in an overabundance\nAnswer:",
+      "raw_generation": "D"
+    }
+  ]
+}

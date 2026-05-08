@@ -1,0 +1,53 @@
+{
+  "rank_by": "public_avg",
+  "rows": [
+    {
+      "run_name": "Results/PegasusGPT_T1_run2/run2dpo_best_checkpoint",
+      "output_dir": "Results/PegasusGPT_T1_run2/run2dpo_best_checkpoint",
+      "checkpoint": "/Users/taskmaster/Desktop/NLP/PikoGPT_Leaderboard/Submissions/PegasusGPT_T1_run2/runs/run2dpo_best_checkpoint.pt",
+      "limit": 500,
+      "public_avg": 37.4,
+      "overall_avg": 37.4,
+      "invalid_total": 0,
+      "total_total": 2000,
+      "per_bench_acc": {
+        "hellaswag": 33.6,
+        "winogrande": 51.4,
+        "openbookqa": 40.8,
+        "lambada": 23.799999999999997
+      }
+    },
+    {
+      "run_name": "Results/PegasusGPT_T1/pg_dpo_uf_best_checkpoint",
+      "output_dir": "Results/PegasusGPT_T1/pg_dpo_uf_best_checkpoint",
+      "checkpoint": "/Users/taskmaster/Desktop/NLP/PikoGPT_Leaderboard/Submissions/PegasusGPT_T1/runs/pg_dpo_uf_best_checkpoint.pt",
+      "limit": 500,
+      "public_avg": 26.7,
+      "overall_avg": 26.7,
+      "invalid_total": 0,
+      "total_total": 2000,
+      "per_bench_acc": {
+        "hellaswag": 25.4,
+        "winogrande": 50.8,
+        "openbookqa": 27.0,
+        "lambada": 3.5999999999999996
+      }
+    },
+    {
+      "run_name": "Results/PikoGPT_Baseline_GH/11_epoch_1650_steps_checkpoint_20260209_001131",
+      "output_dir": "Results/PikoGPT_Baseline_GH/11_epoch_1650_steps_checkpoint_20260209_001131",
+      "checkpoint": "/Users/goetz-henrik.wiegand/Documents/Dev/students/PikoGPT_Leaderboard/Submissions/PikoGPT_Baseline_GH/runs/11_epoch_1650_steps_checkpoint_20260209_001131.pt",
+      "limit": 500,
+      "public_avg": 25.400000000000002,
+      "overall_avg": 25.400000000000002,
+      "invalid_total": 1,
+      "total_total": 2000,
+      "per_bench_acc": {
+        "hellaswag": 27.800000000000004,
+        "winogrande": 49.4,
+        "openbookqa": 22.6,
+        "lambada": 1.7999999999999998
+      }
+    }
+  ]
+}
