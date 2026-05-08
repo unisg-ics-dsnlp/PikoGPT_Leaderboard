@@ -18,5 +18,8 @@ dependencies = [
     "psutil>=5.9.0",
     "torch>=2.0.0",
     "torchinfo>=1.8.0",
+    "ftfy>=6.0",
+    "gradio>=4.0",
+    "huggingface_hub>=0.23.0,<1.0",
 ]
 
