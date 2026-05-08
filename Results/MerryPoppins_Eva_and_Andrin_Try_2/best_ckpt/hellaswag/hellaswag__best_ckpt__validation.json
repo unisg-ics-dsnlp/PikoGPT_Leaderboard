@@ -1,7 +1,7 @@
 {
   "benchmark": "hellaswag",
-  "submission": "MerryPoppins_Eva_and_Andrin",
-  "checkpoint": "/Users/eva/PycharmProjects/PikoGPT_Leaderboard_Eva_and_Andrin/Submissions/MerryPoppins_Eva_and_Andrin/runs/best_ckpt_dto.pt",
+  "submission": "MerryPoppins_Eva_and_Andrin_Try_2",
+  "checkpoint": "/Users/eva/PycharmProjects/PikoGPT_Leaderboard_Eva_and_Andrin/Submissions/MerryPoppins_Eva_and_Andrin_Try_2/runs/best_ckpt.pt",
   "data": "leaderboard/benchmarks/hellaswag/cleaned/validation.jsonl",
   "limit": 100,
   "total": 100,
@@ -68,16 +68,16 @@
     {
       "id": "hellaswag_val_activitynet_v_0bosp4-pyTM_182",
       "gold": "B",
-      "pred": "A",
+      "pred": "C",
       "prompt": "Context: Then he takes a small stone from the flowing river and smashes it on another stone. He starts to crush the small stone to smaller pieces. he\nA) cuts the center stone in half and blow it on to make it bigger.\nB) grind it hard to make the pieces smaller.\nC) eventually brings it back into view and adds it to the smaller ones to make a small triangular shaped piece.\nD) starts to party with them and throw the pieces by hand while they celebrate.\nAnswer:",
-      "raw_generation": "A"
+      "raw_generation": "C"
     },
     {
       "id": "hellaswag_val_activitynet_v_0bosp4-pyTM_185",
       "gold": "D",
-      "pred": "A",
+      "pred": "C",
       "prompt": "Context: Then he takes a piece of bark and rubs the powered stone pieces onto it. The stone particles stick to the wet piece of wood. he\nA) uses a small brush to polish one of the stone pieces.\nB) then uses a strip of sealing tape to seal the board and then smooths the bottom of the board.\nC) walks towards the camera.\nD) then takes the knife and sharpens it against the wood piece.\nAnswer:",
-      "raw_generation": "A"
+      "raw_generation": "C"
     },
     {
       "id": "hellaswag_val_activitynet_v_0bosp4-pyTM_186",
